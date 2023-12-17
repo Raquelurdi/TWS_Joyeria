@@ -732,6 +732,7 @@
             </owl:Class>
         </rdf:type>
         <Joyería:creada_por rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona1"/>
+        <rdfs:label>&quot;Joyería&quot;</rdfs:label>
     </owl:NamedIndividual>
     
 
