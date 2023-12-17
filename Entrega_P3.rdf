@@ -1,0 +1,1181 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/"
+     xml:base="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:Joyería="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería">
+        <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Producto"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#compra_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#compra_a">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Proveedor"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#compra_anillos -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#compra_anillos">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Anillos"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Producto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#compra_collares -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#compra_collares">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Collares"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Producto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#compra_joyeros -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#compra_joyeros">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Joyeros"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Producto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#compra_pendientes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#compra_pendientes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Pendientes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Producto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#creada_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#creada_por">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Propietario"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#posee -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#posee">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Producto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#realizada_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#realizada_por">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Debate"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Foro"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Propietario"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#venta_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#venta_a">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Cliente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#ciudad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#ciudad">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#descripcion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#descripcion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Producto"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#email">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Producto"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#mensaje -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#mensaje">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Foro"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#precio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#precio">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Producto"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#productosComprados -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#productosComprados">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#telefono -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#telefono">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#tema -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#tema">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Foro"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#tieneDescuento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#tieneDescuento">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Anillos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Anillos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Producto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Cliente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Cliente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Collares -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Collares">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Producto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Debate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Debate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Foro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Foro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Foro"/>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Joyeros -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Joyeros">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Producto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#MejorCliente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#MejorCliente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Noticias -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Noticias">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Producto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Novedades -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Novedades">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Noticias"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Producto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Ofertas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Ofertas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Noticias"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Producto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Pendientes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Pendientes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Producto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Producto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Producto"/>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Propietario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Propietario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Proveedor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Proveedor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Anillo1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Anillo1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Anillos"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Producto"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Cliente1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Cliente1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Cliente"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#MejorCliente"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <Joyería:compra_pendientes rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Pendientes2"/>
+        <Joyería:productosComprados rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</Joyería:productosComprados>
+        <Joyería:tieneDescuento rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</Joyería:tieneDescuento>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Cliente2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Cliente2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Cliente"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <Joyería:compra_joyeros rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Joyero1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Cliente3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Cliente3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Cliente"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <Joyería:compra_anillos rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Anillo1"/>
+        <Joyería:compra_pendientes rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Pendientes1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Cliente4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Cliente4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Cliente"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <Joyería:compra_joyeros rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Joyero1"/>
+        <Joyería:compra_pendientes rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Pendientes2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Debate1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Debate1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Debate"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Foro"/>
+        <Joyería:realizada_por rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Joyero1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Joyero1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Joyeros"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Producto"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Joyería -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Joyería">
+        <rdf:type rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+        <Joyería:creada_por rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Pendientes1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Pendientes1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Pendientes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Producto"/>
+        <Joyería:descripcion>Pendientes de plata</Joyería:descripcion>
+        <Joyería:id rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</Joyería:id>
+        <Joyería:precio rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14</Joyería:precio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Pendientes2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Pendientes2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Pendientes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Producto"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Propietario"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Persona"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/j">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/np">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/c1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/c2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/e">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/d">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Cliente"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#compra_pendientes"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/c"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#productosComprados"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/c"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/np"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/np"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#MejorCliente"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#tieneDescuento"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/c"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Cliente"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/c1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Cliente"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/c2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#compra_pendientes"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/c1"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/p"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#compra_anillos"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/c2"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/a"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#SameIndividualAtom"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/c1"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/c2"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#tieneDescuento"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/c2"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Empresa"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Propietario"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Debate"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/d"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#creada_por"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/e"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/p"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#realizada_por"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/d"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Cliente"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#compra_joyeros"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/c"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/j"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#MejorCliente"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#Cliente"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#compra_pendientes"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/c"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#compra_joyeros"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/c"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/j"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/p"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/j"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería#tieneDescuento"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/34646/ontologies/2023/10/Joyería/c"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
