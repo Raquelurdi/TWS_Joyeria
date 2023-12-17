@@ -770,6 +770,7 @@
                 </owl:unionOf>
             </owl:Class>
         </rdf:type>
+        <foaf:name>Persona1</foaf:name>
     </owl:NamedIndividual>
     
 
