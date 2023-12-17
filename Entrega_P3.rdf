@@ -771,6 +771,7 @@
             </owl:Class>
         </rdf:type>
         <foaf:name>Persona1</foaf:name>
+        <rdfs:label>&quot;Persona1&quot;</rdfs:label>
     </owl:NamedIndividual>
     
 
